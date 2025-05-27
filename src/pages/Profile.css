@@ -1,0 +1,399 @@
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+}
+
+.profile-login-required {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #666;
+}
+
+.profile-login-required i {
+  font-size: 4rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.profile-login-required h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.profile-login-required p {
+  margin-bottom: 2rem;
+}
+
+.login-button {
+  padding: 0.75rem 2rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background: #0056b3;
+}
+
+.profile-sidebar {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.profile-user-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.profile-avatar i {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.profile-user-info h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-user-info p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.profile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-nav button {
+  padding: 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  color: #666;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profile-nav button i {
+  width: 20px;
+}
+
+.profile-nav button:hover {
+  background: #f8f9fa;
+  color: #007bff;
+}
+
+.profile-nav button.active {
+  background: #007bff;
+  color: white;
+}
+
+.profile-content {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.profile-section h2 {
+  color: #333;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.save-button {
+  padding: 0.75rem 2rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background: #0056b3;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-item {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.order-header {
+  padding: 1rem;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-header h4 {
+  margin: 0;
+  color: #333;
+}
+
+.order-header p {
+  margin: 0.25rem 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.order-status {
+  padding: 0.25rem 0.75rem;
+  background: #28a745;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.order-products {
+  padding: 1rem;
+}
+
+.order-product {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.order-product img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-info h5 {
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.product-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.order-footer {
+  padding: 1rem;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-total {
+  font-weight: 600;
+  color: #333;
+}
+
+.view-order-button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-order-button:hover {
+  background: #0056b3;
+}
+
+.addresses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.address-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address-content h4 {
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.address-content p {
+  margin: 0;
+  color: #666;
+}
+
+.address-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-button,
+.delete-button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.edit-button {
+  background: #f8f9fa;
+  color: #007bff;
+}
+
+.delete-button {
+  background: #f8f9fa;
+  color: #dc3545;
+}
+
+.edit-button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.delete-button:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.add-address-button,
+.add-payment-button {
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.add-address-button:hover,
+.add-payment-button:hover {
+  background: #e9ecef;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.payment-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.card-info h4 {
+  margin: 0 0 0.25rem;
+  color: #333;
+}
+
+.card-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-sidebar {
+    margin-bottom: 1rem;
+  }
+
+  .profile-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .profile-nav button {
+    flex: 1;
+    min-width: 150px;
+  }
+} 

@@ -1,39 +1,63 @@
 import React from 'react';
 import './About.css';
 
-const About = () => (
-  <div className="about-page">
-    <section className="about-hero">
-      <h1>About Sundus Collection</h1>
-      <p className="about-tagline">Your Premium Fashion Destination</p>
-    </section>
+const About = () => {
+  return (
+    <div className="about-container">
+      <div className="about-hero">
+        <h1>About Sundus Collection</h1>
+        <p>Your Premier Destination for Fashion Excellence</p>
+      </div>
 
-    <section className="about-story">
-      <h2>Our Story</h2>
-      <p>
-        Sundus Collection was founded with a passion for bringing the latest trends and timeless classics to fashion lovers everywhere. Our journey began with a simple idea: to make high-quality, stylish, and affordable clothing accessible to everyone. Over the years, we have grown into a trusted brand known for our commitment to quality, customer satisfaction, and a curated selection of apparel and accessories for men, women, and children.
-      </p>
-    </section>
+      <div className="about-content">
+        <section className="about-section">
+          <h2>Our Story</h2>
+          <p>
+            Founded with a passion for fashion and a commitment to quality, Sundus Collection
+            has grown from a small boutique to a leading fashion destination. We believe in
+            bringing you the finest selection of clothing and accessories that combine
+            style, comfort, and elegance.
+          </p>
+        </section>
 
-    <section className="about-values">
-      <h2>Our Values</h2>
-      <ul>
-        <li><strong>Quality First:</strong> We source only the finest materials and work with skilled artisans to ensure every piece meets our high standards.</li>
-        <li><strong>Customer-Centric:</strong> Your satisfaction is our top priority. We strive to provide exceptional service and a seamless shopping experience.</li>
-        <li><strong>Inclusivity:</strong> Fashion is for everyone. Our collections are designed to celebrate diversity and empower individuals to express their unique style.</li>
-        <li><strong>Innovation:</strong> We stay ahead of the trends, constantly updating our collections to bring you the latest in fashion.</li>
-        <li><strong>Sustainability:</strong> We are committed to ethical sourcing and environmentally friendly practices to help protect our planet.</li>
-      </ul>
-    </section>
+        <section className="about-section">
+          <h2>Our Mission</h2>
+          <p>
+            At Sundus Collection, we strive to provide our customers with exceptional
+            fashion choices that reflect their unique style. We are committed to:
+          </p>
+          <ul>
+            <li>Curating the finest quality products</li>
+            <li>Providing outstanding customer service</li>
+            <li>Staying ahead of fashion trends</li>
+            <li>Ensuring sustainable and ethical practices</li>
+          </ul>
+        </section>
 
-    <section className="about-cta">
-      <h2>Join the Sundus Collection Family</h2>
-      <p>
-        Whether you're looking for the perfect outfit for a special occasion or everyday essentials, Sundus Collection has something for everyone. Explore our latest arrivals and experience the difference of shopping with a brand that truly cares.
-      </p>
-      <a href="/products" className="about-shop-btn">Shop Our Collection</a>
-    </section>
-  </div>
-);
+        <section className="about-section">
+          <h2>Why Choose Us</h2>
+          <div className="features-grid">
+            <div className="feature">
+              <h3>Quality Assured</h3>
+              <p>Every product meets our high standards of quality and craftsmanship.</p>
+            </div>
+            <div className="feature">
+              <h3>Trending Styles</h3>
+              <p>Stay ahead with our carefully selected latest fashion trends.</p>
+            </div>
+            <div className="feature">
+              <h3>Customer First</h3>
+              <p>Your satisfaction is our top priority with 24/7 support.</p>
+            </div>
+            <div className="feature">
+              <h3>Fast Delivery</h3>
+              <p>Quick and reliable shipping to your doorstep.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+};
 
 export default About; 
